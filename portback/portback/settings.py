@@ -136,8 +136,8 @@ STATIC_ROOT = BASE_DIR / "staticfiles_build" / "static"
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [
     
-    'http://127.0.0.1:5500',  # Your local frontend
-    'http://localhost:5500',   # Sometimes localhost uses this
+    # 'http://127.0.0.1:5500',  # Your local frontend
+    # 'http://localhost:5500',   # Sometimes localhost uses this
     'https://rohit-portfolio1.netlify.app',  # Your production frontend
 ]
 
