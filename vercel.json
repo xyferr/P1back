@@ -13,7 +13,7 @@
             "src": "build.sh",
             "use": "@vercel/static-build",
             "config": { 
-                "distDir": "staticfiles_build" 
+                "distDir": "/portback/staticfiles_build" 
             }
         }
     ],
@@ -21,7 +21,7 @@
         
         {
             "src": "/static/(.*)",
-            "dest": "/static/$1"
+            "dest": "/portback/staticfiles_build/static/$1"
         },
         {
             "src": "/(.*)",
