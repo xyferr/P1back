@@ -1,10 +1,10 @@
 {
-    "version":2,
-    "builds":[
+    "version": 2,
+    "builds": [
         {
-            "src":"/portback/portback/wsgi.py",
-            "use":"@vercel/python",
-            "config":{ 
+            "src": "/portback/portback/wsgi.py",
+            "use": "@vercel/python",
+            "config": {
                 "maxLambdaSize": "15mb",
                 "runtime": "python3"
             }
@@ -12,13 +12,12 @@
         {
             "src": "build.sh",
             "use": "@vercel/static-build",
-            "config": { 
-                "distDir": "/portback/staticfiles_build" 
+            "config": {
+                "distDir": "portback/staticfiles_build"
             }
         }
     ],
     "routes": [
-        
         {
             "src": "/static/(.*)",
             "dest": "/portback/staticfiles_build/static/$1"
@@ -29,8 +28,6 @@
         }
     ],
     "env": {
-        "DJANGO_SETTINGS_MODULE": "/portback/portback/settings.py"
+        "DJANGO_SETTINGS_MODULE": "portback.settings"
     }
-    
-
 }
