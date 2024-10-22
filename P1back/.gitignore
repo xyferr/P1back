@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-myvenv
-=======
 myenv
 *.env
 bin/
 lib/
 *.sqlite3
->>>>>>> b2f725d022cd6ae15e4f022b9122998521f8905e
